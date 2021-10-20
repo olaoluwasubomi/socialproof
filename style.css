@@ -1,0 +1,237 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    display:flex;
+    min-height: 100vh;
+    width:100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.top-image{
+    height:50vh;
+    width: 40%;
+    position:fixed;
+    z-index:-20;
+    bottom:400px;
+    right:500px;
+}
+.bottom-image{
+    height:90vh;
+    width:80%;
+    position:fixed;
+    top:200px;
+    left:400px;
+    z-index:-20;
+    
+}
+/* GENERAL STYLING */
+.main{
+margin: 0 auto;
+width:80%;
+}
+/* END OF GENERAL SYLING */
+
+/* THE FIRST SECTION STYLING */
+.box1,.box2{
+display: flex;
+align-items: center;
+justify-content: center;
+width:90%;
+margin:0 auto;
+}
+.box1 div{
+flex-basis: 50%;
+}
+.text1 h2{
+color: hsl(300, 43%, 22%);
+font-size:40px;
+width:70%;
+line-height:0.9em;
+}
+.text1 p{
+color:hsl(303, 10%, 53%);
+margin-top:10px;
+width:100%;
+}
+.container{
+margin-left:140px;
+}
+.container div{
+display: flex;
+flex-direction: column;
+align-items: flex-end;
+}
+.container div {
+background-color: hsl(300, 24%, 96%);
+display: block;
+margin-bottom: 10px;
+width: max-content;
+padding:15px 30px 15px 10px;
+border-radius: 10px;
+}
+.container p{
+font-size:15px;
+margin-left:8px;
+display: inline-block;
+text-transform: capitalize;
+color:hsl(300, 43%, 22%);
+font-weight:bolder;
+}
+.container .one{
+margin-left:30px;
+}
+.container .two{
+margin-left:90px;
+}
+/* END OF FIRST PART STYLING */
+
+/* THE SECOND PART STLING */
+.box2 .box{
+margin-top:50px;
+width: 100%;
+background-color:hsl(300, 43%, 22%);
+margin-right:10px;
+padding:15px;
+border-radius:10px;
+}
+.dp,.text{
+margin:10px 15px;
+}
+span{
+display:block;
+}
+.think{
+margin-right:0px;
+}
+.box2 .think{
+margin-top:100px;
+}
+.img{
+border-radius:80px;
+width:15%;
+}
+.dp{
+display:flex;   
+}
+.word{
+margin-left:10px;
+}
+.word p{
+color:#fff;
+text-transform: capitalize;
+}
+.word span{
+color:hsl(333, 80%, 67%);
+text-transform: capitalize;
+margin-top:3px;
+}
+.text{
+color: hsl(0, 0%, 100%);
+width:95%;
+line-height:1.3em;
+}
+.box2 .think1{
+margin-top:80px;
+}
+/* END OF SECOND PART STYLING */
+@media screen and (max-width:500px){
+    body{
+        display:flex;
+        min-height: 100vh;
+        width:100%;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .main{
+        margin: 0 auto;
+        width:90%;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .box1{
+        display:flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .box2{
+        display:flex;
+        flex-direction: column;
+    }
+    .text1 h2{
+        color: hsl(300, 43%, 22%);
+        font-size:30px;
+        width:70%;
+        line-height:0.9em;
+        /* margin-top:40px; */
+        text-align: center;
+        margin:40px auto 0px;
+    }
+    .text1 p{
+        width:80%;
+        font-size:15px;
+        text-align: center;
+        margin:10px auto;
+    }
+    .box1,.box2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width:90%;
+        margin:0 auto;
+    }
+    .container .one{
+        margin-left:0px;
+    }
+    .container .two{
+        margin-left:00px;
+    }
+    .container p{
+        display:block;
+    }
+    .container{
+        width:90%;
+        margin-left:0px;
+        margin-top:20px;
+    }
+    .container div {
+        background-color: hsl(300, 24%, 96%);
+        display: block;
+        margin-bottom: 15px;
+        width:100%;
+        padding:5px 40px;
+        border-radius: 10px;
+    }
+    /* .box{
+        margin-top:10px;
+    }
+    .box2 .box{
+        margin-top:30px;
+        width: 100%;
+        background-color:hsl(300, 43%, 22%);
+        margin-right:0px;
+        padding:15px;
+        border-radius:10px;
+
+    } */
+    .box2 .box{
+        margin-top:10px;
+        width: 90%;
+        background-color:hsl(300, 43%, 22%);
+        margin-right:0px;
+        padding:15px;
+        border-radius:10px;
+    }
+    .dp{
+        width:100%;
+    }
+    .think{
+        margin-bottom:20px;
+    }
+}
